@@ -1,0 +1,35 @@
+.report-screen { min-height: 100svh; overflow-y: auto; padding: clamp(2.5rem, 7vw, 6rem) clamp(1rem, 7vw, 7rem); background: #08090d; background-image: radial-gradient(circle at 88% 0%, rgba(255,45,120,.18), transparent 26rem), radial-gradient(circle at 5% 55%, rgba(117,71,255,.12), transparent 28rem), linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px), linear-gradient(0deg, rgba(255,255,255,.018) 1px, transparent 1px); background-size: auto, auto, 70px 70px, 70px 70px;}
+.report-content { width: 100%; max-width: 1120px; margin: 0 auto; }
+.report-header-nav { display: flex; justify-content: flex-start; margin-bottom: 2rem; }
+.minimal-back-btn { background: transparent; border: 1px solid rgba(255,255,255,.14); border-radius: 4px; color: rgba(255,255,255,.56); font: .72rem var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: .5rem .85rem; cursor: pointer; transition: all .2s ease; }
+.minimal-back-btn:hover { color: #ffeaf3; border-color: rgba(255,45,120,.45); background: rgba(255,45,120,.08); }
+.report-content h1 { color: #ffeaf3; -webkit-text-fill-color: #ffeaf3; font-size: clamp(3rem, 7vw, 6.8rem); line-height: .88; letter-spacing: -.08em; text-shadow: 0 0 30px rgba(255,45,120,.22); margin-bottom: 1rem; }
+.report-content .subtitle { color: rgba(255,255,255,.48); font-size: .9rem; margin: 0 0 3.5rem; }
+.report-section { margin-bottom: 3.2rem; }
+.report-section h2 { display: flex; align-items: center; gap: .8rem; padding-bottom: .9rem; border-bottom: 1px solid rgba(255,255,255,.13); color: #ffeaf3; font-size: 1rem; letter-spacing: .01em; }
+.score-display { color: var(--primary-color); font: clamp(4rem, 10vw, 8rem) var(--mono); letter-spacing: -.1em; line-height: .95; text-shadow: 0 0 30px rgba(255,45,120,.3); padding: 1.2rem 0 1.6rem; }
+.segments-report { display: grid; gap: 1rem; }
+.segment-report-card, .overall-metrics-card, .recommendation-card { overflow: hidden; background: linear-gradient(145deg, rgba(22,25,31,.92), rgba(12,14,19,.95)); border: 1px solid rgba(255,255,255,.14); border-radius: 4px; box-shadow: inset 0 1px rgba(255,255,255,.04); }
+.segment-report-card:hover { border-color: rgba(255,45,120,.45); }
+.segment-report-header { padding: 1.1rem 1.25rem; background: linear-gradient(100deg, rgba(255,45,120,.1), rgba(155,99,255,.06)); border-bottom: 1px solid rgba(255,45,120,.25); }
+.segment-report-header h3 { color: #ffeaf3; font-size: 1rem; text-transform: capitalize; }
+.segment-report-header .focus { color: rgba(255,255,255,.45); font-size: .72rem; margin-top: .35rem; }
+.segment-report-body { display: grid; grid-template-columns: 1.3fr 1fr; gap: 1.5rem; padding: 1.25rem; }
+.summary, .technical-metrics, .communication-metrics { display: flex; flex-direction: column; gap: .5rem; }
+.summary h4, .technical-metrics h4, .communication-metrics h4 { color: var(--primary-color); font: .6rem var(--mono); letter-spacing: .13em; text-transform: uppercase; }
+.summary p, .technical-metrics li, .communication-metrics li { color: rgba(255,255,255,.56); font-size: .8rem; line-height: 1.7; }
+.technical-metrics ul, .communication-metrics ul { padding: 0; margin: 0; list-style: none; }
+.technical-metrics li, .communication-metrics li { padding: .35rem 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+.technical-metrics strong, .communication-metrics strong, .overall-metrics-card strong { color: #ffeaf3; }
+.overall-metrics-card, .recommendation-card { padding: 1.25rem; }
+.overall-metrics-card p, .recommendation-card p { color: rgba(255,255,255,.56); font-size: .84rem; line-height: 1.75; }
+.improvements-section .improvements-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; padding: 0; margin: 0; list-style: none; }
+.improvements-list li { display: flex; gap: .9rem; padding: 1.1rem; background: rgba(20,22,29,.88); border: 1px solid rgba(255,255,255,.12); border-left: 2px solid var(--primary-color); }
+.improvement-number { color: var(--primary-color); font: .78rem var(--mono); }
+.improvement-text { color: rgba(255,255,255,.56); font-size: .8rem; line-height: 1.6; }
+.strength-callout { padding: 1.4rem; background: linear-gradient(120deg, rgba(255,45,120,.1), rgba(155,99,255,.06)); border: 1px solid rgba(255,45,120,.35); border-radius: 4px; }
+.strength-callout h3 { color: #ff9fc0; font-size: 1rem; margin-bottom: .7rem; }
+.strength-callout p { color: rgba(255,255,255,.6); line-height: 1.7; }
+.report-actions { display: flex; justify-content: flex-start; margin-bottom: 1rem; }
+.restart-button { padding: .85rem 1.1rem; font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+@media (max-width: 700px) { .segment-report-body, .improvements-section .improvements-list { grid-template-columns: 1fr; } }

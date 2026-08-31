@@ -1,0 +1,29 @@
+:root {
+  --muted-text: var(--text-muted);
+  --border-color: var(--border);
+  --background-color: var(--background);
+  --surface-color: var(--surface);
+  --accent: var(--primary-color);
+  --accent-bg: rgba(238, 106, 75, .1);
+  --accent-border: rgba(238, 106, 75, .45);
+  --code-bg: #202b2b;
+  --text-h: var(--text);
+}
+html, body { min-height: 100%; background: var(--background); }
+body { background-image: none; }
+.auth-page, .info-page, .student-dashboard, .company-dashboard { background-color: transparent; background-image: none; }
+.auth-card, .dashboard-section, .company-panel, .analytics-panel, .progress-card, .quick-card, .info-card, .signal-board, .kpi-card, .history-list, .history-detail, .project-card { background: var(--surface); border-color: var(--border); box-shadow: none; }
+.auth-card, .dashboard-section, .company-panel, .info-card, .signal-board, .kpi-card, .history-list, .history-detail, .project-card { border-radius: 6px; }
+.auth-roles button.active, .topic-chip:hover, .interest-tags button.selected { background: var(--accent-bg); }
+.auth-submit, .primary-button, .company-primary, .submit-button, .signals-cta-btn { background: var(--primary-color); border-color: var(--primary-color); color: #fffdf8; }
+.auth-submit:hover, .primary-button:hover, .company-primary:hover, .submit-button:hover, .signals-cta-btn:hover { background: var(--primary-dark); box-shadow: none; }
+.interview-screen { background: var(--background); color: var(--text); }.interview-header, .interviewer-section, .user-input-section, .interview-footer, .camera-panel { background: var(--surface); border-color: var(--border); }.left-panel { background: var(--background); border-color: var(--border); }.right-panel, .code-panel { background: #151719; }.live-question-box { background: var(--surface); border-color: var(--border); }.transcript-box { background-image: none; }.transcript-entry .text { background: var(--surface); color: var(--text-muted); border-radius: 4px; }.transcript-entry.candidate .text { background: var(--surface-raised); border-color: var(--border); }.user-textarea { background: var(--background); border-color: var(--border); }.camera-frame { background: #202428; }.progress-bar { background: var(--surface-soft); }.progress-fill { background: var(--primary-color); box-shadow: none; }
+
+.options-screen, .plan-confirmation, .report-screen, .info-page, .history-page { background: var(--background) !important; background-image: none !important; }
+.options-screen::before, .options-screen::after, .info-page::after { display: none !important; }
+.option-card, .segment-card, .segment-report-card, .overall-metrics-card, .recommendation-card, .info-card, .signal-board, .history-list, .history-detail, .project-card { background: var(--surface) !important; border: 1px solid var(--border) !important; border-radius: 6px !important; box-shadow: none !important; }
+.option-card:hover, .segment-card:hover, .info-card:hover, .project-card:hover { transform: none !important; border-color: var(--primary-color) !important; box-shadow: none !important; }
+.options-content h1, .plan-content h1, .report-content h1, .info-hero h1, .about-hero h1, .info-card h2, .option-title, .segment-type, .report-section h2 { color: var(--text) !important; text-shadow: none !important; -webkit-text-fill-color: currentColor; }
+.options-content .subtitle, .plan-content .subtitle, .report-content .subtitle, .info-hero p, .info-card p, .option-description, .segment-focus { color: var(--text-muted) !important; }
+.segment-questions, .segment-report-header, .strength-callout { background: var(--surface-soft) !important; border-color: var(--border) !important; }
+.minimal-back-btn, .reject-button, .info-back { color: var(--text-muted) !important; border-color: var(--border) !important; background: transparent !important; }
